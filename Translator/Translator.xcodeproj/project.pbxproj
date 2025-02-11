@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		EB58BBD62D5BBC6F0064668A /* TranslatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBD52D5BBC6F0064668A /* TranslatorApp.swift */; };
-		EB58BBD82D5BBC6F0064668A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBD72D5BBC6F0064668A /* ContentView.swift */; };
+		EB58BBD82D5BBC6F0064668A /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBD72D5BBC6F0064668A /* TranslatorView.swift */; };
 		EB58BBDA2D5BBC810064668A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBD92D5BBC810064668A /* Assets.xcassets */; };
 		EB58BBDD2D5BBC810064668A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBDC2D5BBC810064668A /* Preview Assets.xcassets */; };
+		EB58BBE52D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBE42D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf */; };
+		EB58BBE92D5BC4410064668A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBE82D5BC4410064668A /* CustomFonts.swift */; };
+		EB58BBF72D5BCF3A0064668A /* voiceLottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBF62D5BCF3A0064668A /* voiceLottieAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB58BBD22D5BBC6F0064668A /* Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB58BBD52D5BBC6F0064668A /* TranslatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorApp.swift; sourceTree = "<group>"; };
-		EB58BBD72D5BBC6F0064668A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EB58BBD72D5BBC6F0064668A /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
 		EB58BBD92D5BBC810064668A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB58BBDC2D5BBC810064668A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EB58BBE42D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "konkhmer-sleokchher-normal.ttf"; sourceTree = "<group>"; };
+		EB58BBE62D5BC23B0064668A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EB58BBE82D5BC4410064668A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
+		EB58BBF62D5BCF3A0064668A /* voiceLottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = voiceLottieAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		EB58BBD42D5BBC6F0064668A /* Translator */ = {
 			isa = PBXGroup;
 			children = (
-				EB58BBD52D5BBC6F0064668A /* TranslatorApp.swift */,
-				EB58BBD72D5BBC6F0064668A /* ContentView.swift */,
+				EB58BBE62D5BC23B0064668A /* Info.plist */,
+				EB58BBEE2D5BCB430064668A /* App */,
+				EB58BBEF2D5BCB560064668A /* Core */,
+				EB58BBEA2D5BCA800064668A /* LottieAnimation */,
+				EB58BBE72D5BC4280064668A /* Extensions */,
+				EB58BBE32D5BC18A0064668A /*  Font */,
 				EB58BBD92D5BBC810064668A /* Assets.xcassets */,
 				EB58BBDB2D5BBC810064668A /* Preview Content */,
 			);
@@ -65,6 +76,78 @@
 				EB58BBDC2D5BBC810064668A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EB58BBE32D5BC18A0064668A /*  Font */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBE42D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf */,
+			);
+			path = " Font";
+			sourceTree = "<group>";
+		};
+		EB58BBE72D5BC4280064668A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBE82D5BC4410064668A /* CustomFonts.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EB58BBEA2D5BCA800064668A /* LottieAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBF62D5BCF3A0064668A /* voiceLottieAnimation.json */,
+			);
+			path = LottieAnimation;
+			sourceTree = "<group>";
+		};
+		EB58BBEE2D5BCB430064668A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBD52D5BBC6F0064668A /* TranslatorApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EB58BBEF2D5BCB560064668A /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBF22D5BCC490064668A /* TranslatorScreen */,
+				EB58BBF52D5BCDBD0064668A /* ResultScreen */,
+				EB58BBF42D5BCC630064668A /* SettingsScreen */,
+				EB58BBF32D5BCC510064668A /* Tabbar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		EB58BBF22D5BCC490064668A /* TranslatorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBD72D5BBC6F0064668A /* TranslatorView.swift */,
+			);
+			path = TranslatorScreen;
+			sourceTree = "<group>";
+		};
+		EB58BBF32D5BCC510064668A /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		EB58BBF42D5BCC630064668A /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		EB58BBF52D5BCDBD0064668A /* ResultScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResultScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB58BBF72D5BCF3A0064668A /* voiceLottieAnimation.json in Resources */,
 				EB58BBDD2D5BBC810064668A /* Preview Assets.xcassets in Resources */,
 				EB58BBDA2D5BBC810064668A /* Assets.xcassets in Resources */,
+				EB58BBE52D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB58BBD82D5BBC6F0064668A /* ContentView.swift in Sources */,
+				EB58BBE92D5BC4410064668A /* CustomFonts.swift in Sources */,
+				EB58BBD82D5BBC6F0064668A /* TranslatorView.swift in Sources */,
 				EB58BBD62D5BBC6F0064668A /* TranslatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +283,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -275,11 +361,12 @@
 				DEVELOPMENT_TEAM = 3XK355J24V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Translator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,9 +374,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gR.Translator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,11 +394,12 @@
 				DEVELOPMENT_TEAM = 3XK355J24V;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Translator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,9 +407,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = gR.Translator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
