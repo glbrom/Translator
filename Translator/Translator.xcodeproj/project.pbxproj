@@ -14,6 +14,16 @@
 		EB58BBE52D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBE42D5BC1EE0064668A /* konkhmer-sleokchher-normal.ttf */; };
 		EB58BBE92D5BC4410064668A /* CustomFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBE82D5BC4410064668A /* CustomFonts.swift */; };
 		EB58BBF72D5BCF3A0064668A /* voiceLottieAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = EB58BBF62D5BCF3A0064668A /* voiceLottieAnimation.json */; };
+		EB58BBFC2D5BDCA50064668A /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBFB2D5BDCA50064668A /* Icons.swift */; };
+		EB58BBFE2D5BE07D0064668A /* DefaultButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBFD2D5BE07D0064668A /* DefaultButton.swift */; };
+		EB58BC002D5BE7030064668A /* AnimalsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BBFF2D5BE7030064668A /* AnimalsButton.swift */; };
+		EB58BC022D5BEDF00064668A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC012D5BEDEF0064668A /* SettingsView.swift */; };
+		EB58BC042D5BEF0E0064668A /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC032D5BEF0E0064668A /* SettingsModel.swift */; };
+		EB58BC062D5BF71E0064668A /* CustomTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC052D5BF71E0064668A /* CustomTabbarView.swift */; };
+		EB58BC0A2D5C01CC0064668A /* TabbarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC092D5C01CC0064668A /* TabbarModel.swift */; };
+		EB58BC0C2D5C069B0064668A /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0B2D5C069B0064668A /* MainTabbarView.swift */; };
+		EB58BC0E2D5C1AC70064668A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0D2D5C1AC70064668A /* ResultView.swift */; };
+		EB58BC102D5C23890064668A /* CustomBackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0F2D5C23890064668A /* CustomBackgroundGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		EB58BBE62D5BC23B0064668A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EB58BBE82D5BC4410064668A /* CustomFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFonts.swift; sourceTree = "<group>"; };
 		EB58BBF62D5BCF3A0064668A /* voiceLottieAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = voiceLottieAnimation.json; sourceTree = "<group>"; };
+		EB58BBFB2D5BDCA50064668A /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		EB58BBFD2D5BE07D0064668A /* DefaultButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButton.swift; sourceTree = "<group>"; };
+		EB58BBFF2D5BE7030064668A /* AnimalsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsButton.swift; sourceTree = "<group>"; };
+		EB58BC012D5BEDEF0064668A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		EB58BC032D5BEF0E0064668A /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		EB58BC052D5BF71E0064668A /* CustomTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarView.swift; sourceTree = "<group>"; };
+		EB58BC092D5C01CC0064668A /* TabbarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarModel.swift; sourceTree = "<group>"; };
+		EB58BC0B2D5C069B0064668A /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
+		EB58BC0D2D5C1AC70064668A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		EB58BC0F2D5C23890064668A /* CustomBackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +83,7 @@
 				EB58BBEF2D5BCB560064668A /* Core */,
 				EB58BBEA2D5BCA800064668A /* LottieAnimation */,
 				EB58BBE72D5BC4280064668A /* Extensions */,
+				EB58BBFA2D5BD62D0064668A /* Helpers */,
 				EB58BBE32D5BC18A0064668A /*  Font */,
 				EB58BBD92D5BBC810064668A /* Assets.xcassets */,
 				EB58BBDB2D5BBC810064668A /* Preview Content */,
@@ -90,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				EB58BBE82D5BC4410064668A /* CustomFonts.swift */,
+				EB58BC0F2D5C23890064668A /* CustomBackgroundGradient.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -125,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				EB58BBD72D5BBC6F0064668A /* TranslatorView.swift */,
+				EB58BBFF2D5BE7030064668A /* AnimalsButton.swift */,
 			);
 			path = TranslatorScreen;
 			sourceTree = "<group>";
@@ -132,6 +155,9 @@
 		EB58BBF32D5BCC510064668A /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
+				EB58BC0B2D5C069B0064668A /* MainTabbarView.swift */,
+				EB58BC052D5BF71E0064668A /* CustomTabbarView.swift */,
+				EB58BC092D5C01CC0064668A /* TabbarModel.swift */,
 			);
 			path = Tabbar;
 			sourceTree = "<group>";
@@ -139,6 +165,8 @@
 		EB58BBF42D5BCC630064668A /* SettingsScreen */ = {
 			isa = PBXGroup;
 			children = (
+				EB58BC012D5BEDEF0064668A /* SettingsView.swift */,
+				EB58BC032D5BEF0E0064668A /* SettingsModel.swift */,
 			);
 			path = SettingsScreen;
 			sourceTree = "<group>";
@@ -146,8 +174,18 @@
 		EB58BBF52D5BCDBD0064668A /* ResultScreen */ = {
 			isa = PBXGroup;
 			children = (
+				EB58BC0D2D5C1AC70064668A /* ResultView.swift */,
 			);
 			path = ResultScreen;
+			sourceTree = "<group>";
+		};
+		EB58BBFA2D5BD62D0064668A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EB58BBFB2D5BDCA50064668A /* Icons.swift */,
+				EB58BBFD2D5BE07D0064668A /* DefaultButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,9 +260,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB58BC102D5C23890064668A /* CustomBackgroundGradient.swift in Sources */,
+				EB58BC042D5BEF0E0064668A /* SettingsModel.swift in Sources */,
+				EB58BC0A2D5C01CC0064668A /* TabbarModel.swift in Sources */,
+				EB58BC022D5BEDF00064668A /* SettingsView.swift in Sources */,
+				EB58BBFC2D5BDCA50064668A /* Icons.swift in Sources */,
+				EB58BBFE2D5BE07D0064668A /* DefaultButton.swift in Sources */,
 				EB58BBE92D5BC4410064668A /* CustomFonts.swift in Sources */,
+				EB58BC0E2D5C1AC70064668A /* ResultView.swift in Sources */,
 				EB58BBD82D5BBC6F0064668A /* TranslatorView.swift in Sources */,
+				EB58BC002D5BE7030064668A /* AnimalsButton.swift in Sources */,
 				EB58BBD62D5BBC6F0064668A /* TranslatorApp.swift in Sources */,
+				EB58BC062D5BF71E0064668A /* CustomTabbarView.swift in Sources */,
+				EB58BC0C2D5C069B0064668A /* MainTabbarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +331,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -340,7 +388,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -367,6 +415,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -400,6 +449,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

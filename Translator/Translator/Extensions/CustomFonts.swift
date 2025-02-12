@@ -12,7 +12,7 @@ enum KonkhmerSleokchherFont: String {
 }
 
 extension Font {
-    static func interFont(_ font: KonkhmerSleokchherFont, size: CGFloat) -> Font {
+    static func konkhmerFont(_ font: KonkhmerSleokchherFont, size: CGFloat) -> Font {
         return .custom(font.rawValue, size: size)
     }
 }
