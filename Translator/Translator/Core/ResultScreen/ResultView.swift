@@ -9,18 +9,28 @@ import SwiftUI
 
 struct ResultView: View {
     // MARK: - Properties
+    @ObservedObject var viewModel: TranslatorViewModel
     @Environment(\.presentationMode) var presentationMode
     @State private var showRepeat = false
+    @State private var randomPhrase: String = ""
+    
+    let phrases = [
+        "What are you doing, human?",
+        "I’m hungry, feed me!",
+        "Hey, let's go for a walk!",
+        "Did you forget about me?",
+        "I demand attention! Scratch my belly!"
+    ]
     
     // MARK: - Body
     var body: some View {
-        
         ZStack {
             VStack(spacing: 14) {
                 HStack(alignment: .center) {
                     
                     Button {
                         presentationMode.wrappedValue.dismiss()
+                        viewModel.resetState()
                     } label: {
                         Image(Icons.closeIcon)
                             .resizable()
@@ -44,6 +54,7 @@ struct ResultView: View {
                 if showRepeat {
                     Button(action: {
                         presentationMode.wrappedValue.dismiss()
+                        viewModel.resetState()
                     }) {
                         VStack {
                             
@@ -68,7 +79,7 @@ struct ResultView: View {
                     ZStack {
                         Image(Icons.askIcon)
                         
-                        Text("What are you doing, human?")
+                        Text(randomPhrase)
                             .font(.konkhmerFont(.regular, size: 14))
                             .padding(.bottom, 100)
                     }
@@ -78,14 +89,16 @@ struct ResultView: View {
                 
                 Spacer()
                 
-                Image(Icons.dog)
+                Image(viewModel.selectedAnimal)
                     .padding(.bottom, 134)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .backgroundGradient()
+        .navigationBarBackButtonHidden(true)
         .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+            randomPhrase = phrases.randomElement() ?? "What are you doing, human?"
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
                 showRepeat = true
             }
         }
@@ -93,5 +106,5 @@ struct ResultView: View {
 }
 
 #Preview {
-    ResultView()
+    ResultView(viewModel: TranslatorViewModel())
 }

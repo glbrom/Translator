@@ -9,8 +9,7 @@ import SwiftUI
 
 struct AnimalsButton: View {
     // MARK: - Properties
-    @Binding var isSelected: Bool
-    
+    var isSelected: Bool
     var icon: String
     var color: Color
     var action: (() -> Void)?
@@ -18,7 +17,6 @@ struct AnimalsButton: View {
     // MARK: - Body
     var body: some View {
         Button(action: {
-            isSelected.toggle()
             action?()
         }) {
             Rectangle()
@@ -36,5 +34,5 @@ struct AnimalsButton: View {
 }
 
 #Preview {
-    AnimalsButton(isSelected: .constant(true), icon: Icons.dog, color: Color.lightGreen)
+    AnimalsButton(isSelected: true, icon: Icons.dog, color: Color.lightGreen)
 }

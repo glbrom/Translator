@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum SettingsButton: Int, Identifiable, Hashable, CaseIterable {
+enum SettingsButton: Int, Identifiable, CaseIterable {
     case rateUs
     case shareApp
     case contactUs

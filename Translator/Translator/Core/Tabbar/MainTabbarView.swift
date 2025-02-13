@@ -20,29 +20,20 @@ struct MainTabbarView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack {
-                
                 ZStack {
-                    
                     if selectedTab == 0 {
-                        
                         TranslatorView()
-                        
                     }
                     else if selectedTab == 1 {
-                        
                         SettingsView()
-                        
                     }
-                    
                 }
                 .ignoresSafeArea()
             }
             
             CustomTabbarView(tabbarItems: self.tabItems, selectedTab: $selectedTab)
                 .padding(.bottom, 20)
-            
         }
-        
     }
 }
 

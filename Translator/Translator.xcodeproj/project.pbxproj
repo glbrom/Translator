@@ -24,6 +24,9 @@
 		EB58BC0C2D5C069B0064668A /* MainTabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0B2D5C069B0064668A /* MainTabbarView.swift */; };
 		EB58BC0E2D5C1AC70064668A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0D2D5C1AC70064668A /* ResultView.swift */; };
 		EB58BC102D5C23890064668A /* CustomBackgroundGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB58BC0F2D5C23890064668A /* CustomBackgroundGradient.swift */; };
+		EB8B9D082D5D1A6F00DF5519 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = EB8B9D072D5D1A6F00DF5519 /* Lottie */; };
+		EB8B9D0A2D5D1DCD00DF5519 /* ProcessTranslationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B9D092D5D1DCD00DF5519 /* ProcessTranslationView.swift */; };
+		EB8B9D0E2D5D48ED00DF5519 /* TranslatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8B9D0D2D5D48ED00DF5519 /* TranslatorViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,8 @@
 		EB58BC0B2D5C069B0064668A /* MainTabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbarView.swift; sourceTree = "<group>"; };
 		EB58BC0D2D5C1AC70064668A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		EB58BC0F2D5C23890064668A /* CustomBackgroundGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundGradient.swift; sourceTree = "<group>"; };
+		EB8B9D092D5D1DCD00DF5519 /* ProcessTranslationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessTranslationView.swift; sourceTree = "<group>"; };
+		EB8B9D0D2D5D48ED00DF5519 /* TranslatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8B9D082D5D1A6F00DF5519 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,10 +141,10 @@
 		EB58BBEF2D5BCB560064668A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EB58BBF22D5BCC490064668A /* TranslatorScreen */,
-				EB58BBF52D5BCDBD0064668A /* ResultScreen */,
-				EB58BBF42D5BCC630064668A /* SettingsScreen */,
 				EB58BBF32D5BCC510064668A /* Tabbar */,
+				EB58BBF22D5BCC490064668A /* TranslatorScreen */,
+				EB58BBF42D5BCC630064668A /* SettingsScreen */,
+				EB58BBF52D5BCDBD0064668A /* ResultScreen */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -148,6 +154,9 @@
 			children = (
 				EB58BBD72D5BBC6F0064668A /* TranslatorView.swift */,
 				EB58BBFF2D5BE7030064668A /* AnimalsButton.swift */,
+				EB58BBFD2D5BE07D0064668A /* DefaultButton.swift */,
+				EB8B9D092D5D1DCD00DF5519 /* ProcessTranslationView.swift */,
+				EB8B9D0D2D5D48ED00DF5519 /* TranslatorViewModel.swift */,
 			);
 			path = TranslatorScreen;
 			sourceTree = "<group>";
@@ -183,7 +192,6 @@
 			isa = PBXGroup;
 			children = (
 				EB58BBFB2D5BDCA50064668A /* Icons.swift */,
-				EB58BBFD2D5BE07D0064668A /* DefaultButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -204,6 +212,9 @@
 			dependencies = (
 			);
 			name = Translator;
+			packageProductDependencies = (
+				EB8B9D072D5D1A6F00DF5519 /* Lottie */,
+			);
 			productName = Translator;
 			productReference = EB58BBD22D5BBC6F0064668A /* Translator.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +243,9 @@
 				Base,
 			);
 			mainGroup = EB58BBC92D5BBC6F0064668A;
+			packageReferences = (
+				EB8B9D062D5D1A6F00DF5519 /* XCRemoteSwiftPackageReference "lottie-spm" */,
+			);
 			productRefGroup = EB58BBD32D5BBC6F0064668A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -262,6 +276,7 @@
 			files = (
 				EB58BC102D5C23890064668A /* CustomBackgroundGradient.swift in Sources */,
 				EB58BC042D5BEF0E0064668A /* SettingsModel.swift in Sources */,
+				EB8B9D0A2D5D1DCD00DF5519 /* ProcessTranslationView.swift in Sources */,
 				EB58BC0A2D5C01CC0064668A /* TabbarModel.swift in Sources */,
 				EB58BC022D5BEDF00064668A /* SettingsView.swift in Sources */,
 				EB58BBFC2D5BDCA50064668A /* Icons.swift in Sources */,
@@ -273,6 +288,7 @@
 				EB58BBD62D5BBC6F0064668A /* TranslatorApp.swift in Sources */,
 				EB58BC062D5BF71E0064668A /* CustomTabbarView.swift in Sources */,
 				EB58BC0C2D5C069B0064668A /* MainTabbarView.swift in Sources */,
+				EB8B9D0E2D5D48ED00DF5519 /* TranslatorViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +426,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Translator/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to your mircophone to use the app’s features";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translator needs speech recognition to convert your voice to text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -444,6 +462,8 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Translator/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Allow access to your mircophone to use the app’s features";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translator needs speech recognition to convert your voice to text.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -488,6 +508,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EB8B9D062D5D1A6F00DF5519 /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EB8B9D072D5D1A6F00DF5519 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB8B9D062D5D1A6F00DF5519 /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EB58BBCA2D5BBC6F0064668A /* Project object */;
 }
