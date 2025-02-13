@@ -94,7 +94,7 @@ struct TranslatorView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .backgroundGradient()
-            .navigationDestination(isPresented: $viewModel.showProcessTranslation) {
+            .fullScreenCover(isPresented: $viewModel.showProcessTranslation) {
                 ProcessTranslationView(selectedAnimal: viewModel.selectedAnimal)
                     .onAppear {
                         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
@@ -105,10 +105,11 @@ struct TranslatorView: View {
                     }
                     .navigationBarBackButtonHidden(true)
             }
+            .fullScreenCover(isPresented: $viewModel.navigateToResult) {
+                ResultView(viewModel: viewModel)
+            }
         }
-        .fullScreenCover(isPresented: $viewModel.navigateToResult) {
-            ResultView(viewModel: viewModel)
-        }
+        
     }
 }
 
